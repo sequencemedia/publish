@@ -1,8 +1,4 @@
-#!/bin/sh
-
-NPM_TOKEN=$1
-
-echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+#!/bin/bash
 
 PATTERN="([0-9]+)\.([0-9]+)\.([0-9]+)"
 NAME=$(node -p "require('./package').name")
